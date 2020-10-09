@@ -1,0 +1,104 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="C:\Users\admin\Documents\Facu\BIEF\bootstrap4-botones-iconos-inicial-master\css\font-awesome.min.css">
+    <link href="C:\Users\admin\Documents\Facu\BOOTSTRAP\estilos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <title>
+        ME-MASTER ENGLISH
+    </title>
+</head>
+<body>
+    <div class="foto">
+        <img src="file:///C:/Users/admin/Documents/Facu/HTML%20y%20CSS/Imagenes/FOTOME.jpg">
+    </div>
+    <div class="Menu">
+        <ul class="menu2">
+        <li >
+            <a href="C:\Users\admin\Documents\Facu\BOOTSTRAP\index.html">Inicio</a>
+        </li>
+         <li >
+            <a href="C:\Users\admin\Documents\Facu\BOOTSTRAP\servicios.html" >Servicios</a>
+        </li>
+        <li >
+            <a href="C:\Users\admin\Documents\Facu\BOOTSTRAP\contacto.html" >Contacto</a>
+        </li>
+        <li >
+            <a href="C:\Users\admin\Documents\Facu\BOOTSTRAP\redes.html" >Redes</a>
+        </li>
+        <li >
+            <a href="C:\Users\admin\Documents\Facu\BOOTSTRAP\clientes.html">Clientes</a>
+        </li>
+        <li >
+            <a href="C:\Users\admin\Documents\Facu\BOOTSTRAP\sobreNosotros.html">Sobre Nosotros</a>
+        </li>
+        </ul>
+    </div>
+    <div class="Cuerpo">
+        <section class="Info">
+            <h2>Medios de Contacto</h2>
+            <a style="color: black;" href="mailto:me.masterenglish@gmail.com">EMAIL: me.masterenglish@gmail.com</a><br>
+            <a style="color: black;" href="https://wa.link/5019pv">Celular: +54-9-11-3070-0106 </a>
+        </section>
+    </div>
+    <form class="formulario" >
+    <div class="formContacto">
+        <h1>CONTÁCTANOS</h1>
+        <a style="color: black;" href="mailto:me.masterenglish@gmail.com">me.masterenglish@gmail.com</a><br>
+        <br>
+        <div class="form-group">
+          <input type="text" id="Nombre" class="form-control"  placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <input type="email" id="Email" class="form-control"  placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="text" id="N°Telefono"  class="form-control"  placeholder="N°Telefono">
+        </div>
+        <div class="form-group">
+          <input type="text" id="Asunto"  class="form-control"  placeholder="Asunto">
+        </div>
+        <div class="form-group">
+            <input type="text" id="Mensaje" class="form-control"  placeholder="Mensaje">
+        </div>
+        <button style="cursor:pointer" id="comp-kebqg8gelink" class="g-transparent-a style-kebqg8gllink"><span id="comp-kebqg8gelabel" class="style-kebqg8gllabel">Enviar</span></button>
+    </div>
+        <br>
+    </form>
+    <script>
+        var formulario=document.getElementsByName("formulario")[0];
+        var valor=document.getElementById("N°Telefono");
+        console.log(valor);
+        var validarTel=function(e){
+            if(valor!=Number){
+                alert("completa con NUMEROS");
+                e.preventDefault();
+            }
+        }
+
+        var validarRadio=function(e){
+            if (formulario.sexo[0].checked==true || formulario.sexo[1].checked==true){
+            }else{
+                alert("debe seleccionar un campo para el sexo")
+                e.preventDefault();
+            }
+        }
+
+        var validarCheckbox=function(e){
+            if(formulario.terminos.checked==false){
+                alert("debe aceptar los terminos y condiciones")
+            }
+        }
+        var validar=function(e){
+            validarTel(e);
+            validarRadio(e);
+            validarCheckbox(e);
+        }
+        formulario.addEventListener("submit",validar);
+    </script>
+</body>
+<footer>
+    <br>
+    <p>2015- ME-MASTER ENGLISH es marca registrada por Adriana Keichian Idiomas in-company</p>
+</footer>

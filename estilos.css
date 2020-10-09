@@ -1,0 +1,94 @@
+
+li{
+    list-style: none;
+    display: inline;
+    color: black;
+    font-size: 30px;
+    margin: 15px;
+    background-color: black;
+
+}
+body{
+    flex-wrap: wrap;
+}
+
+.Menu{
+    display: grid;
+}
+.menu2{
+    margin-left: 20%;
+
+}
+li a:hover{
+    color: white;
+}
+img{
+    margin-left: 40%;
+    background-color: grey;
+}
+*{
+    background-color: grey;
+}
+
+.Info
+{
+    font-size: 30px;
+    color: black;
+    margin-left: 30%;
+    max-width: 1000px;
+}
+.Info h2{
+    font-size: 50px;
+    text-decoration: underline;
+}
+.Info li{
+    color:black ;
+    background-color: grey;
+    display: list-item;
+}
+
+i{
+    color: black;
+    min-width: 300px;
+}
+i:hover{
+    color: white;
+}
+footer p{
+    margin-left: 30%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    max-width: 810px;
+}
+.foto{
+
+    background-color: lightblue;
+}
+.formContacto
+{
+    margin-left: 30%;
+}
+.formContacto h1
+{
+    color: black;
+}
+.formContacto a 
+{
+    font-size: 25px;
+    color: black;
+}
+.formContacto input{
+    max-width: 300px;
+    min-height: 50px;
+}
+.formContacto button{
+    color: white;
+    border: black solid 2px;
+    font-size: 20px;
+}
+.formContacto button:hover{
+    text-decoration: underline;
+    border: blue solid 2px;
+    font-size: 22px;
+}
